@@ -1,0 +1,138 @@
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background: #ffeef2;
+  color: #333;
+  padding: 2em;
+}
+
+/* Start Screen */
+#startScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffeef2;
+}
+
+#startBtn {
+  padding: 16px 32px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff5e7e;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+#startBtn:hover {
+  transform: scale(1.05);
+}
+
+/* Main Content */
+h1 {
+  font-size: 2em;
+  color: #ff5e7e;
+}
+
+.subheading {
+  font-size: 1.2em;
+  color: #aa5b6d;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Reason Box */
+.reason {
+  font-size: 1.5em;
+  margin: 20px auto;
+  padding: 1em;
+  border-radius: 10px;
+  background: #fff;
+  width: 60%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-height: 100px;
+}
+
+/* Buttons Styling */
+button {
+  margin: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#generateBtn {
+  background-color: #ff5e7e;
+  color: white;
+}
+
+#favoriteBtn {
+  background-color: #ffd3dc;
+  color: #333;
+}
+
+#viewFavorites {
+  margin-top: 20px;
+  background-color: #ffa7c4;
+  color: white;
+}
+
+/* Favorites Container */
+#favoritesListContainer {
+  margin-top: 30px;
+  background-color: #fff0f5;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#favoritesList {
+  list-style: heart;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+#favoritesList li {
+  margin-bottom: 10px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+  cursor: pointer;
+}
+
+.fade-in:hover {
+  text-decoration: line-through;
+  color: #ff5e7e;
+}
+
+/* Button Hover and Active Effects */
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  background-color: #ff7a95;
+}
+
+button:active {
+  transform: scale(0.98);
+}
